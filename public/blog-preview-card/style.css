@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Figtree';
+    src: url('/frontend-practice/blog-preview-card/assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Why doesn't 100% work here? I assume because parent doesn't have a defined size, since 100% could mean something larger than the viewport. */
+}
+
+.card {
+    background-color: var(--white);
+    border: var(--gray-950) 2px solid;
+    border-radius: 20px;
+    box-shadow: 7px 7px var(--gray-950);
+    /* box-sizing: border-box; */
+    padding: 22px;
+    width: 350px;
+}
+
+.card > img {
+    width: 100%;
+    border-radius: 15px;
+
+    /* Why is setting display: block necessary, shouldn't it already be a block?
+       Why do I need to do this to center the img? I feel like there is a better way. */
+    display: block;
+    margin: 0 auto;
+}
+
+.badge {
+    background-color: var(--yellow);
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 20px 0px 5px 0px;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* :visited was not specified */
+a:hover {
+    color: var(--yellow);
+}
+
+.post-description {
+    color: var(--gray-500);
+    line-height: 1.5rem;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author > img {
+  max-height: 40px;
+}
+
+.author > p {
+  padding-inline: 15px;
+  font-weight: 800;
+  color: var(--gray-950);
+}
