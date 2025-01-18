@@ -27,7 +27,6 @@ body {
     border-radius: 20px;
     box-shadow: 7px 7px var(--gray-950);
     padding: 22px;
-    box-sizing: border-box;
     width: 350px;
 }
 
@@ -75,7 +74,7 @@ a:hover {
 }
 
 .author > img {
-  max-height: 40px;
+  max-height: 35px;
 }
 
 .author > p {
