@@ -1,5 +1,7 @@
 ---
+import { getPages } from '../utils/getPages';
 
+const subfolders = getPages('src/pages/');
 ---
 
 <html lang="en">
@@ -16,6 +18,10 @@
 		<p>Astro allows me to easily take advantage of many different tools all in the same project.</p>
 
 		<h2>Navigate</h2>
-		<a href="/frontend-practice/card">Card</a>
+        <ul>
+            {subfolders.map((folder: unknown) => (
+                <li><a href={`/frontend-practice/${folder}`}>{folder}</a></li>
+            ))}
+        </ul>
 	</body>
 </html>
