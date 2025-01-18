@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('/frontend-practice/social-links-profile/assets/fonts/Inter-VariableFont_slnt,wght.ttf')
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 5px;
+}
+
+#location {
+    font-weight: 600;
+    color: var(--green)
+}
+
+#description {
+    padding-block: 10px;
+}
+
+body {
+  background-color: var(--grey-900);
+  color: var(--white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  background-color: var(--grey-800);
+  box-sizing: border-box;
+  padding: 5px 20px 5px 20px;
+  width: 335px;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 100%;
+  max-height: 70px;
+  margin: 15px
+}
+
+.social {
+  background-color: var(--grey-700);
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+  padding-block: 15px;
+  margin-block: 17px;
+  width: auto;
+}
+
+.social:visited {
+  color: var(--white);
+}
+
+.social:hover {
+  background-color: var(--green);
+  color: var(--grey-800);
+}
