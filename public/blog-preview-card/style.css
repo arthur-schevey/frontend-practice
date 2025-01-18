@@ -26,8 +26,8 @@ body {
     border: var(--gray-950) 2px solid;
     border-radius: 20px;
     box-shadow: 7px 7px var(--gray-950);
-    /* box-sizing: border-box; */
     padding: 22px;
+    box-sizing: border-box;
     width: 350px;
 }
 
